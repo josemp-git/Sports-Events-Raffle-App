@@ -79,7 +79,7 @@ else:
 with open(datafile, 'r', encoding="utf-8-sig") as file:
     # Reads the first row (the headers), headers are removed to not count these as part of the raffle
     found_headers = file.readline().strip().split(',')
-    # Compares the found header with the the expected headers are part of the file. If the correct headers are not there, the app will show an error message and close
+    # Compares the found headers with the the expected headers. If headers are not correct (TEAMS,PLAYERS), the app will show an error message and close
     if [x.lower() for x in found_headers] == [x.lower() for x in headers]:
         pass
     else:

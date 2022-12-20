@@ -1,6 +1,6 @@
-# Sports Events Raffle App
+# Sports Events Raffle Application
 
-This app allows you to run raffles for sports events. All you have to do is provide a CSV file with the names of teams and players, and the app will take care of the rest. The app will shuffle the names and randomly pair them up.
+This application allows you to run raffles for sports events. All you have to do is provide a CSV file with the names of teams and players, and the app will take care of the rest, as it will shuffle the names and randomly pair them up.
 
 The following parameters can be passed to the app:
 

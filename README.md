@@ -8,10 +8,9 @@ The following parameters can be passed to the app:
 - `--pause`: this feature inserts pauses during the execution, particularly when the pairing of teams and players is being displayed, adding more excitement and suspense to the game. Valid values are `'yes'` or `'no'` (`y` or `n`).
 - `--event`: name of the event. If provided, it will be used to name the output file with the results.
 
-
 You can also execute the app without passing any arguments and it will prompt you for the required parameters. 
 
-The app will parse the CSV file and will pair each team with a player and will write the results in another CSV file. If there are more teams than players, the app will randomly assign an equal number of teams to each player. For example, if you have 32 teams and 8 players, the app will randomly assign 4 teams to each player. In the case of an odd number, the app will do its best to evenly distribute the teams, but some lucky players will end up with an extra team. If there are more players than teams, the app will halt and ask you to fix this, as this scenario is not allowed.
+The app will parse the CSV file and will randomly pair each team with a player. The results will be displayed on the screen and written in another CSV file. If there are more teams than players, the app will assign an equal number of random teams to each player. For example, if you have 32 teams and 8 players, the app will randomly assign 4 teams to each player. In the case of an odd number, the app will do its best to evenly distribute the teams, but some lucky players will end up with an extra team. If there are more players than teams, the app will halt and ask you to fix this, as this scenario is not allowed.
 
 The CSV file must contain the headers **TEAMS,PLAYERS** otherwise tha app will not work. A CSV file (`data.csv`) is provided as en example.
 
@@ -23,7 +22,9 @@ Passing arguments:
 
 **python3 shuffler.py --file data.csv --pause yes --event WorldCup**
 
-This command will execute the app, parse the teams and players found in the file `data.csv`, enable the pause feature, and use `WorldCup` as the prefix of the output CSV file containing the results.
+This command will execute the app, verify that the file exists, parse the teams and players found in the file `data.csv`, enable the pause feature, and use `WorldCup` as the prefix of the output CSV file containing the results.
+
+ ![Passing arguments](withargs.png)
 
 ### Example 2:
 

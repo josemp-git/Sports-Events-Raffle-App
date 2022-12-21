@@ -33,7 +33,7 @@ Without passing any arguments:
 
  If you do so, it will prompt you to enter the name of the file containing the teams and players, and ask if you want to enable the pause feature. The output file name with the results will have the prefix `results`.
  
- ![Without passing any arguments](/static/images/mgn/noargs.png)
+ ![Without passing any arguments](noargs.png)
  
  ### Example 3:
 
